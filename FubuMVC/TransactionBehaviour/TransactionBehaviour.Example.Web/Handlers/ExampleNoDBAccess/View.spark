@@ -1,0 +1,6 @@
+<viewdata model="TransactionBehaviour.Example.Web.Handlers.ExampleNoDBAccess.ViewModel"/>
+<content name="title">
+  Example with No Database Access
+</content>
+
+<p>This is reading some data from the DB using ISession</p>

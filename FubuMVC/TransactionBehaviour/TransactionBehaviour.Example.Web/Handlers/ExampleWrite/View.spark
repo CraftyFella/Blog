@@ -1,0 +1,13 @@
+<viewdata model="TransactionBehaviour.Example.Web.Handlers.ExampleWrite.ViewModel"/>
+<content name="title">
+  Example Writing to the DB and redirecting
+</content>
+
+${this.FormFor<TransactionBehaviour.Example.Web.Handlers.ExampleWrite.PostInputModel>
+  ()}
+  ${this.LabelFor<TransactionBehaviour.Example.Web.Handlers.ExampleWrite.PostInputModel>
+    (x => x.Name)}
+    ${this.InputFor<TransactionBehaviour.Example.Web.Handlers.ExampleWrite.PostInputModel>
+      (x => x.Name)}
+      <input type="submit" value="save"/>
+      </form>

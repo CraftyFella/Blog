@@ -1,0 +1,8 @@
+<viewdata model="TransactionBehaviour.Example.Web.Handlers.ExampleRead.ViewModel"/>
+<content name="title">
+  Example reading from the DB
+</content>
+
+<p>This is reading some data from the DB using ISession</p>
+
+<p>${this.DisplayFor(Model, x => x.Message)}</p>

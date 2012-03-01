@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title><use content="title"/></title>
+  </head>
+  <body>
+    <div id="header">
+		<ul>
+			<li>${this.LinkTo<TransactionBehaviour.Example.Web.Handlers.Dashboard.GetInputModel>().Text("Dashboard")}</li>
+			<li>${this.LinkTo<TransactionBehaviour.Example.Web.Handlers.ExampleNoDBAccess.GetInputModel>().Text("Example with No DB Access")}</li>
+			<li>${this.LinkTo<TransactionBehaviour.Example.Web.Handlers.ExampleRead.GetInputModel>().Text("Example reading from an ISession")}</li>
+			<li>${this.LinkTo<TransactionBehaviour.Example.Web.Handlers.ExampleWrite.GetInputModel>().Text("Example saving to an ISession")}</li>
+		</ul>
+	</div>
+    <div id="pageContent">
+	<h1><use content="title"/></h1>
+	<use content="view"/></div>
+    <div id="footer">dot dot dot</div>
+  </body>
+</html>
