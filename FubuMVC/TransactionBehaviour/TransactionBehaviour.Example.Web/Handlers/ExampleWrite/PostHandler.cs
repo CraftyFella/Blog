@@ -24,7 +24,7 @@ namespace TransactionBehaviour.Example.Web.Handlers.ExampleWrite
                 tran.Commit();
             }
 
-            return FubuContinuation.RedirectTo(new GetInputModel());
+            return FubuContinuation.RedirectTo(new ExampleRead.GetInputModel());
         }
     }
 

@@ -19,7 +19,7 @@ namespace TransactionBehaviour.Example.Web
         public TransactionBehaviourRegistry()
         {
             ForSingletonOf<ISessionFactory>().Use(CreateSessionFactory);
-            ForSingletonOf<ISession>().Use(x => x.GetInstance<ISessionFactory>().OpenSession());
+            For<ISession>().HttpContextScoped().Use(x => x.GetInstance<ISessionFactory>().OpenSession());
         }
 
         private ISessionFactory CreateSessionFactory()
