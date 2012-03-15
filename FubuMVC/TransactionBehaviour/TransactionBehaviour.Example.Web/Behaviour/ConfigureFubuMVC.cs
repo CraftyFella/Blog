@@ -3,7 +3,7 @@ using FubuMVC.Spark;
 using TransactionBehaviour.Example.Web.Handlers;
 using TransactionBehaviour.Example.Web.Handlers.Dashboard;
 
-namespace TransactionBehaviour.Example.Web
+namespace TransactionBehaviour.Example.Web.Behaviour
 {
     public class ConfigureFubuMVC : FubuRegistry
     {
@@ -20,6 +20,7 @@ namespace TransactionBehaviour.Example.Web
             Views.TryToAttachWithDefaultConventions();
 
             ApplyHandlerConventions(typeof(HandlersMaker));
+            ApplyConvention<TransactionBehaviourConfiguration>();
             this.UseSpark();
 
 

@@ -1,6 +1,7 @@
 using Bottles;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
+using TransactionBehaviour.Example.Web.Behaviour;
 
 // You can remove the reference to WebActivator by calling the Start() method from your Global.asax Application_Start
 [assembly: WebActivator.PreApplicationStartMethod(typeof(TransactionBehaviour.Example.Web.App_Start.AppStartFubuMVC), "Start", callAfterGlobalAppStart: true)]

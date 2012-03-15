@@ -17,12 +17,8 @@ namespace TransactionBehaviour.Example.Web.Handlers.ExampleWrite
 
         public FubuContinuation Execute(PostInputModel inputModel)
         {
-            using (var tran = session.BeginTransaction())
-            {
-                var customer = new Customer {Name = inputModel.Name};
-                session.Save(customer);
-                tran.Commit();
-            }
+            var customer = new Customer {Name = inputModel.Name};
+            session.Save(customer);
 
             return FubuContinuation.RedirectTo(new ExampleRead.GetInputModel());
         }

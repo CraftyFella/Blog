@@ -16,12 +16,8 @@ namespace TransactionBehaviour.Example.Web.Handlers.ExampleRead
 
         public ViewModel Execute(GetInputModel inputModel)
         {
-            using (var tran = session.BeginTransaction())
-            {
-                var message = string.Format("There are {0} customers in the system.", session.Query<Customer>().Count());
-                tran.Commit();
-                return new ViewModel { Message = message };
-            }
+            var message = string.Format("There are {0} customers in the system.", session.Query<Customer>().Count());
+            return new ViewModel { Message = message };
         }
     }
 

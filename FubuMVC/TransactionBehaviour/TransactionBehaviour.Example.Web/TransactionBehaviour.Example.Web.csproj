@@ -127,7 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FubuMVC.cs" />
-    <Compile Include="ConfigureFubuMVC.cs" />
+    <Compile Include="Behaviour\ConfigureFubuMVC.cs" />
+    <Compile Include="Behaviour\TransactionBehaviour.cs" />
+    <Compile Include="Behaviour\TypeExtensions.cs" />
     <Compile Include="Entities\CustomerMap.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Handlers\Dashboard\GetHandler.cs" />
